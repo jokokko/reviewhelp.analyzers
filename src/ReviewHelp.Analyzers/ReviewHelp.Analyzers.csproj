@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>  
+    <TargetFrameworks>net46;netstandard1.3;netstandard2.0</TargetFrameworks>
+  </PropertyGroup>  
+  
+  <PropertyGroup>
+	<NuspecProperties>configuration=$(Configuration);version=$(Version)</NuspecProperties>
+	<NuspecFile>ReviewHelp.Analyzers.nuspec</NuspecFile>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="2.6.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces">
+      <HintPath>C:\Users\joonak\.nuget\packages\microsoft.codeanalysis.workspaces.common\2.6.1\lib\netstandard1.3\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

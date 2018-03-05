@@ -1,0 +1,17 @@
+title: ReviewHelp Analyzers
+description: Roslyn analyzers to support reviewing code
+collections:
+  rules:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: "rules"
+    values:
+      layout: rule
+baseurl: /reviewhelp.analyzers
+repository: jokokko/reviewhelp.analyzers
+author: Joona-Pekka Kokko
+exclude: ["Gemfile*"]
+plugins:  
+  - jekyll-seo-tag

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata minClientVersion="2.12">
+    <id>ReviewHelp.Analyzers</id>
+    <version>1.0.0</version>
+    <title>ReviewHelp.Analyzers</title>
+    <authors>Joona-Pekka Kokko</authors>
+    <summary>Code Analyzers to support reviewing code</summary>
+    <description>Code Analyzers to support reviewing code.</description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/jokokko/reviewhelp.analyzers</projectUrl>    
+    <licenseUrl>https://raw.githubusercontent.com/jokokko/reviewhelp.analyzers/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>reviewhelp.analyzers, review, code review, analyzers, roslyn</tags>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\netstandard1.3\ReviewHelp.Analyzers.dll" target="analyzers\dotnet\cs\" />
+    <file src="tools\*.ps1" target="tools\" />
+  </files>
+</package>
