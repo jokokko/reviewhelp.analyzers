@@ -12,7 +12,7 @@ namespace ReviewHelp.Analyzers.Tests.Usage
         private readonly DiagnosticAnalyzer analyzer = new NullableTypeAssignedDefaultOfUnderlyingType();
 
         [Fact]
-        public async void CanIdentifyQueriesWithinIterations()
+        public async void CanIdentifyNullableAssignsToDefaultOfUnderlyingType()
         {			
             var diagnostics = await TestHelper.GetDiagnosticsAsync(analyzer,
                 @"using System;

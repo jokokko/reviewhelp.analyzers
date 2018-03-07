@@ -5,7 +5,7 @@ Code Analyzers to support reviewing code.
 
 For rules, see https://jokokko.github.io/reviewhelp.analyzers/.
 
-![Nullable DateTime assigned to default(DateTime)](assets/sample.png)
+![Warnings from the analyzer](assets/sample.png)
 
 Note: the current analyzers exist to aid myself in locating sites to review. The warnings they produce need to evaluated in context of the application domain.
 
