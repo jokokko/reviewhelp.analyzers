@@ -44,7 +44,7 @@ namespace ReviewHelp.Analyzers.Usage
 		        return;
 		    }
 
-            var matchingParameter = methodSymbol.Parameters.FirstOrDefault(x => sourceSymbol.Symbol.Name.Equals(x.Name, StringComparison.OrdinalIgnoreCase));
+            var matchingParameter = methodSymbol.Parameters.FirstOrDefault(x => sourceSymbol.Symbol.Name.Equals(x.Name, StringComparison.Ordinal));
 
 		    if (matchingParameter == null)
 		    {

@@ -15,5 +15,6 @@ namespace ReviewHelp.Analyzers
 	    internal static readonly DiagnosticDescriptor RH1002CaughtExceptionDiscarded = Rule("RH1002", "Caught exception discarded in throw", RuleCategory.Usage, DiagnosticSeverity.Warning, "Caught exception '{0}' discarded in throw.");
 	    internal static readonly DiagnosticDescriptor RH1003CaughtExceptionNotCapturedDiscarded = Rule("RH1003", "Caught exception not captured and discarded in throw", RuleCategory.Usage, DiagnosticSeverity.Warning, "Caught exception not captured in a local variable and discarded in throw.");
         internal static readonly DiagnosticDescriptor RH1004ArgumentNameDiffersFromPropertyAssignedTo = Rule("RH1004", "Constructor argument name differs from property or field being assigned to", RuleCategory.Usage, DiagnosticSeverity.Warning, "Constructor argument name '{0}' differs from property or field '{1}' being assigned to.");
-    }
+	    internal static readonly DiagnosticDescriptor RH1005CtorEnumerableArgCouldBeMaterialized = Rule("RH1005", "IEnumerable<T> assigned from constructor argument could be materialized", RuleCategory.Usage, DiagnosticSeverity.Info, "IEnumerable '{0}' assigned from constructor argument '{1}' could be materialized.");
+	}
 }
